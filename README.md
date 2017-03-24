@@ -1,5 +1,12 @@
 # Example: Watson Developer Cloud-Java SDK with unreleased okhttp
 
+What makes this experiment interesting is wanting to test if the
+Watson Developer Cloud-Java SDK works correctly on recent IBM Java
+with this https://github.com/square/okhttp/issues/3173
+fix in place in https://github.com/square/okhttp
+
+## Building `okhttp`
+
 Build portions of the `master` branch of `okhttp`,
 installing the built artifacts into your local Maven repository.
 
@@ -10,6 +17,8 @@ installing the built artifacts into your local Maven repository.
 
 Once you have builds of these okhttp modules available locally,
 you can build and run this example code.
+
+## Building this example
 
     mvn package
     java -jar target/j9experiment-1.0.0-SNAPSHOT-jar-with-dependencies.jar username password
